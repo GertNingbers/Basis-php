@@ -21,9 +21,8 @@ if ($_SESSION['is ingelogt'] == false) {
         <div name="login">
             <a href="session-logout.php">Uitloggen</a>
         </div>
-        <div id="profilepic"></div>
     </div>
-    <h2>Je bent ingelogt
+    <h2>Welkom ,
         <?php
          echo $_SESSION['naam'];
         ?>

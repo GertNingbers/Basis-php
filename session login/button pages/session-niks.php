@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if ($_SESSION['is ingelogt'] == false) {
+    header('Location: ../session-login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +17,10 @@ session_start();
 <div id="topbalk">
         <h1><a href="../session-home.php"><img src="../img/logo.png" id="logo"></a></h1>
         <div name="login">
+            <a href="../session-logout.php">Uitloggen</a>
         </div>
-        <div id="profilepic"></div>
     </div>
-    <h2>Het doet niks</h2>
+    <h2>Geheime info sttt...</h2>
     <button onclick="window.location.href='../session-home.php'">Terug naar home</button>
 
 </body>

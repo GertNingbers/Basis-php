@@ -16,19 +16,18 @@ session_start();
     <div id="topbalk">
         <h1><a href="session-home.php"><img src="img/logo.png" id="logo"></a></h1>
         <div name="login">
-        <?php
-        if (isset($_SESSION['is ingelogt'])) {
-            if ($_SESSION['is ingelogt'] === true) {
-                echo "<a href='session-logout.php'>Uitloggen</a>";
+            <?php
+            if (isset($_SESSION['is ingelogt'])) {
+                if ($_SESSION['is ingelogt'] === true) {
+                    echo "<a href='session-logout.php'>Uitloggen</a>";
+                } else {
+                    echo "<a href='session-login.php'>Login</a>";
+                }
             } else {
                 echo "<a href='session-login.php'>Login</a>";
             }
-        } else {
-            echo "<a href='session-login.php'>Login</a>";
-        }
             ?>
         </div>
-        <div id="profilepic"></div>
     </div>
     <div id="navibalk">
         <button onclick="window.location.href='button pages/session-niks.php'">shop</button>

@@ -23,15 +23,15 @@ if ($_SESSION['is ingelogt'] == false) {
         <div id="profilepic"></div>
     </div>
     <div name="login">
-            <?php
-            
-            if (isset($_SESSION['is ingelogt']) && $_SESSION['is ingelogt'] === true) {
-                echo "<form method='post'><button type='submit' name='logout'>Uitloggen</button></form>";
-            } else {
-                echo "<a href='session-login.php'>Login</a>";
-            }
-            ?>
-        </div>
+        <?php
+
+        if (isset($_SESSION['is ingelogt']) && $_SESSION['is ingelogt'] === true) {
+            echo "<form method='post'><button type='submit' name='logout'>Uitloggen</button></form>";
+        } else {
+            echo "<a href='session-login.php'>Login</a>";
+        }
+        ?>
+    </div>
     <?php
     if (isset($_POST['logout'])) {
         header('Location: session-home.php');
