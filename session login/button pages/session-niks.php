@@ -19,5 +19,7 @@ session_start();
         <div id="profilepic"></div>
     </div>
     <h2>Het doet niks</h2>
+    <button onclick="window.location.href='../session-home.php'">Terug naar home</button>
+
 </body>
 </html>
