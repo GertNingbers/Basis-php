@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightslategray;
+}
+#topbalk{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px;
+    color: white;
+    min-width: 813px;
+}
+#navibalk{
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+}
+button{
+    min-height: 70px;
+    min-width: 180px;
+    margin: 10px;
+}
+a{
+    color: white;
+}
+#logo{
+    margin: -10px 290px -20px 355px;
+}
+form {
+    border: 1px solid black;
+    background-color: white;
+}
+input{
+    padding: 10px;
+}
