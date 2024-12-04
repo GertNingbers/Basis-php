@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightslategray;
+    background-color: rgb(182, 204, 227);
 }
 #topbalk{
     display: flex;
